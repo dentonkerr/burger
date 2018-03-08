@@ -4,8 +4,12 @@ $(function() {
         var newBurger = $(this).data("newburger");
 
         var newBurgerState = {
-            devoured = newBurger
+            devoured: false
         };
+
+        console.log(id);
+        console.log(newBurger);
+        console.log(newBurgerState);
 
         $.ajax("/api/burgers" + id, {
             type: "PUT",
