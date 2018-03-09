@@ -12,7 +12,7 @@ $(function () {
         console.log(newBurger);
         console.log(newBurgerState);
 
-        $.ajax("/api/burgers" + id, {
+        $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: newBurgerState
         }).then(
@@ -30,7 +30,7 @@ $(function () {
             devoured: false
         };
 
-        $.ajax("/api/burgers", {
+        $.ajax("/api/burgers/", {
             type: "POST",
             data: newBurger
         }).then(
@@ -40,7 +40,4 @@ $(function () {
             }
             );
     });
-
-
-
 });
