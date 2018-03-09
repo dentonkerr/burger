@@ -1,0 +1,62 @@
+body {
+    background: brown;
+}
+
+#img {
+    text-align: center;
+    margin-top: 2%;
+}
+
+img#burgimg {
+    width: 15%;
+    height: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Rammetto One', cursive;
+    margin-bottom: 1%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+ul {
+    color: white;
+    padding-left: 30%;
+    font-size: 140%;
+    width: 50%;
+}
+
+.create-form {
+    text-align: center;
+}
+
+input#burg {
+    font-size: 160%;
+    padding: .15%;
+}
+
+button.change-devour {
+    color: black;
+    padding: 1%;
+    margin: 1%;
+    font-size: 90%;
+}
+
+button.btn.btn-default {
+    font-size: 110%;
+    padding: .5%;
+    position: relative;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+
+
