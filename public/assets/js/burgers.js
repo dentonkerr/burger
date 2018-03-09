@@ -1,10 +1,11 @@
-$(function() {
-    $(".change-devour").on("click", function(event) {
+$(function () {
+
+    $(".change-devour").on("click", function (event) {
         var id = $(this).data("id");
         var newBurger = $(this).data("newburger");
 
         var newBurgerState = {
-            devoured: false
+            devoured: true
         };
 
         console.log(id);
@@ -15,14 +16,14 @@ $(function() {
             type: "PUT",
             data: newBurgerState
         }).then(
-            function() {
+            function () {
                 console.log("Change devoured to " + newBurger);
                 location.reload();
             }
-        );
+            );
     });
 
-    $(".create-form").on("submit", function(event) {
+    $(".create-form").on("submit", function (event) {
         event.preventDefault();
         var newBurger = {
             burger_name: $("#burg").val().trim(),
@@ -33,11 +34,13 @@ $(function() {
             type: "POST",
             data: newBurger
         }).then(
-            function() {
+            function () {
                 console.log("Added New Burger");
                 location.reload();
             }
-        );
+            );
     });
+
+
 
 });
