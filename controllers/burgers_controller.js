@@ -25,13 +25,13 @@ router.post("/api/burgers", function (req, res) {
 });
 
 router.put("/api/burgers/:id", function (req, res) {
-    var condition = "id = " + req.params.id;
+    console.log('params',  req.params)
 
-    console.log("condition", condition);
+    var conObj = {id: parseInt(req.params.id)}
 
     burger.updateOne({
-        devoured: req.body.devoured
-    }, condition, function (result) {
+        devoured: JSON.parse(req.body.devoured)
+    }, conObj, function (result) {
         if (result.changedRows === 0) {
             return res.status(404).end();
         }
