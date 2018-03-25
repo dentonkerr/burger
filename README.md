@@ -1,2 +1,2 @@
-# burger
-Burger logger created with MySQL, Node, Express, Handlebars and a homemade ORM. 
+# Eat-Da-Burger
+Burger logger created with MySQL, Node, Express, Handlebars and a homemade ORM.
